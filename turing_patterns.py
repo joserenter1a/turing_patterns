@@ -43,7 +43,7 @@ def in_between(img):
 # It takes in the image and an integer x, 
 # and then peforms the diffusion reaction on our image x times
 def turing(img, x: int):
-    img = in_between(img)
+    #img = in_between(img)
 
     for i in range(x):
         # blur and sharpen
