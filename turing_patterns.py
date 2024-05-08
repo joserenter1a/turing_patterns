@@ -3,7 +3,7 @@ import numpy as np
 
 # This function just reads image name as input and returns the file path
 def read_path_init():
-    fpath = input(f"Enter the image name, \n(Make sure it is in the same folder as this program) \nExample: image.jpeg or image.png: ")
+    fpath = input("Enter the image name, \n(Make sure it is in the same folder as this program) \nExample: image.jpeg or image.png: ")
     return f'./imgs/{fpath}'
 
 
@@ -19,7 +19,7 @@ def show_img(img, fpath):
     cv.waitKey(0)
     cv.imwrite(f'{fpath}_turing.jpg', img)
     cv.destroyAllWindows()
-    print(f'Image saved im imgs/')
+    print('Image saved im imgs/')
 # this function acts as our 'reaction' or our sharpening function which
 # just takes the kernel as a np array and returns the sharpened image
 def reaction(img):
